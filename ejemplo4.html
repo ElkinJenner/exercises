@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo 4</title>
+</head>
+<body>
+    <form method="post" action="registro4.php" style="display: inline-table;">
+        <table border="1" width="500">
+            <tr>
+                <td>Nombre</td>
+                <td><input type="text" name="nombre"></td>
+            </tr>
+             <tr>
+                <td>Apellidos</td>
+                <td><input type="text" name="apellidos"></td>
+            </tr>
+            <tr>
+                <td>e-mail</td>
+                <td><input type="email" name="correo"></td>
+            </tr>
+            <tr>
+                <td>Contraseña</td>
+                <td><input type="password" name="clave"></td>
+            </tr>
+            <tr>
+                <td>Valora la documentación</td>
+                <td>
+                    <input type="radio" name="documentacion" value="Buena">Buena
+                    <input type="radio" name="documentacion" value="Normal">Normal
+                    <input type="radio" name="documentacion" value="Mala">Mala
+                </td>
+            </tr>
+            <tr>
+                <td>¿Qué secciones te gustaron?</td>
+                <td>
+                    <input type="checkbox" name="s1">Seccion 1<br>
+                    <input type="checkbox" name="s2">Seccion 2<br>
+                    <input type="checkbox" name="s3">Seccion 3<br>
+                </td>
+            </tr>
+            <tr>
+                <td>Zona de residencia: </td>
+                <td>
+                    <select name="residencia">
+                        <option value="Europa" selected>Europa</option>
+                        <option value="Asia">Asia</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        <p align="center">
+                <input type="submit" value="Enviar">
+                <button>Borrar</button>
+        </p>
+    </form>
+</body>
+</html>

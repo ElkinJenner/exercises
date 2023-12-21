@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo 1</title>
+    <style>
+        body{
+            background: #d2ebf7;
+        }
+        select{
+            width: 180px;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body style="background: #d2ebf7;">
+    <h2>Movimiento Bancario</h2>
+    <h4>Saldo Actual: 5000</h4>
+    <form method="POST" action="retiro.php">
+        <p>Tipo: <select name="TipoDeRetiro">
+            <option value="retiro" selected>R-Retiro</option>
+            <option value="Depósito">Depósito</option>
+            <option value="Transferencia">Transferencia</option>
+            </select>
+        </p>
+        <p>Importe: <input type="text" name="Importe"></p>
+        <p>
+            <input type="submit" value="Procesar">
+            <input type="submit" value="Limpiar">
+        </p>
+    </form>
+</body>
+</html>
